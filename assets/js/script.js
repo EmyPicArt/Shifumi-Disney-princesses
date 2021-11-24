@@ -12,8 +12,16 @@ $(function () {
         console.log(playercount)
         if (playercount == 5) {
             result.html("Tu as gagné la partie !");
+            playercount = 0;
+            compcount = 0;
+            playerresult.html(playercount);
+            compresult.html(compcount);
         } else if (compcount == 5) {
             result.html("L'ordinateur a gagné la partie !");
+            playercount = 0;
+            compcount = 0;
+            playerresult.html(playercount);
+            compresult.html(compcount);
         }
     }
 
