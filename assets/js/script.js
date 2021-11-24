@@ -9,15 +9,20 @@ var result = $('#result');
 $(function () {
 
     function partie() {
-        console.log(playercount)
+        
         if (playercount == 5) {
-            result.html("Tu as gagné la partie !");
+            // playerresult.html(playercount);
+            // compresult.html(compcount);
+
+            result.html("Gagné ! score: "+ playercount+' / '+ compcount );
+            
             playercount = 0;
             compcount = 0;
             playerresult.html(playercount);
             compresult.html(compcount);
+
         } else if (compcount == 5) {
-            result.html("L'ordinateur a gagné la partie !");
+            result.html("Perdu ! score: "+ playercount+' / '+ compcount );
             playercount = 0;
             compcount = 0;
             playerresult.html(playercount);
